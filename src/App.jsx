@@ -1,9 +1,10 @@
-import './App.css'
+import './App.css';
+import Home from './pages/Home'; 
 
 function App() {
   return (
     <div className="h-screen w-screen">
-        <h1>Arch Studio</h1>
+        <Home/>
     </div>
   )
 }
