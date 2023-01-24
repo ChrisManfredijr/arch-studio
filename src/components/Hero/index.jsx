@@ -70,11 +70,11 @@ const Hero = () => {
     })
 
     return (
-        <div className='w-full relative'>
+        <div className='w-full relative md:w-3/4 mx-auto'>
             <div className="w-full h-full flex flex-col absolute top-0 left-0 justify-center items-center">
                 <div className='w-10/12 h-80 flex flex-col justify-between'>
                     <div>
-                        <h1 className='text-6xl text-soft-white font-semibold'>{carousel[currentIndex].title}</h1>
+                        <h1 className='text-6xl text-soft-white font-semibold md:font-bold text-[80px]'>{carousel[currentIndex].title}</h1>
                         <p className='text-soft-white'>{carousel[currentIndex].text}</p>
                     </div>
                     <Button text="See Our Portfolio" />
