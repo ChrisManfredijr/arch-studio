@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 
+
 //responsive images of the Paramour 
 import heroParamourSmall from '../../assets/home/mobile/image-hero-paramour.jpg';
 import heroParamourMedium from '../../assets/home/tablet/image-hero-paramour.jpg';
@@ -67,7 +68,7 @@ const Hero = () => {
         const interval = setInterval(()=>{carouselScroll()}, 7000)
         return () => clearInterval(interval)
     })
-    
+
     return (
         <div className='w-full relative'>
             <div className="w-full h-full flex flex-col absolute top-0 left-0 justify-center items-center">
