@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 //responsive images of the Paramour 
 import heroParamourSmall from '../../assets/home/mobile/image-hero-paramour.jpg';
@@ -23,8 +23,8 @@ import heroTrinityLarge from '../../assets/home/desktop/image-hero-trinity.jpg';
 import Button from '../../components/Button';
 
 const Hero = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-   
+    
+    
     const carousel = [
         {   
             title: 'Project Paramour',
@@ -55,6 +55,19 @@ const Hero = () => {
             text: "Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives."
         }
     ]
+    const [currentIndex, setCurrentIndex] = useState(0);
+    
+    const carouselScroll = () => {
+        if(currentIndex === carousel.length- 1){
+            return setCurrentIndex(0);
+        }
+        return setCurrentIndex(index => index + 1);
+    }
+    useEffect(()=> {
+        const interval = setInterval(()=>{carouselScroll()}, 7000)
+        return () => clearInterval(interval)
+    })
+    
     return (
         <div className='w-full relative'>
             <div className="w-full h-full flex flex-col absolute top-0 left-0 justify-center items-center">
