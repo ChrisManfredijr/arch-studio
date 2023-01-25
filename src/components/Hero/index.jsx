@@ -71,8 +71,8 @@ const Hero = () => {
 
     return (
         <div className='w-full relative md:w-3/4 mx-auto'>
-            <div className="w-full h-full flex flex-col absolute top-0 left-0 justify-center items-center">
-                <div className='w-10/12 h-80 flex flex-col justify-between'>
+            <div className="w-full h-full flex flex-col absolute top-0 left-0 justify-center items-center lg:items-start ml-20">
+                <div className='w-10/12 h-80 flex flex-col justify-between lg:w-5/12 ml-24'>
                     <div>
                         <h1 className='text-6xl text-soft-white font-semibold md:font-bold text-[80px]'>{carousel[currentIndex].title}</h1>
                         <p className='text-soft-white'>{carousel[currentIndex].text}</p>
@@ -86,7 +86,12 @@ const Hero = () => {
                 <source media="(min-width:600px)" srcSet={carousel[currentIndex].heroMedium} />
                 <img src={carousel[currentIndex].heroSmall} alt="Paramour Art Museum" className='w-full'/>
             </picture>
-
+            <div className='flex absolute bottom-[-1px] left-[-80px] bg-soft-white'>
+                <div className='h-20 w-20 text-center text-xl leading-[80px]'>01</div>
+                <div className='h-20 w-20 text-center text-xl leading-[80px]'>02</div>
+                <div className='h-20 w-20 text-center text-xl leading-[80px]'>03</div>
+                <div className='h-20 w-20 text-center text-xl leading-[80px]'>04</div>
+            </div>
         </div>
     )
 }
