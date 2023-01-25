@@ -5,6 +5,7 @@
 @layer base {
     body {
         font-family: "League Spartan", sans-serif;
+        overflow-x: hidden;
     }
 }
 

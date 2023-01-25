@@ -14,6 +14,10 @@ module.exports = {
         "light-grey": "#C8CCD8",
         "very-light-grey": '#eeeff4',
         "red-error": '#DF5656'
+      },
+      screens:{
+        "xl": "1490px",
+        "2xl":"2010px",
       }
     },
   },
