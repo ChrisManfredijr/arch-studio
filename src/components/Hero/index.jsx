@@ -74,7 +74,7 @@ const Hero = () => {
             <div className="w-full h-full flex flex-col absolute top-0 left-0 justify-center items-center z-10">
                 <div className='w-10/12 h-80 flex flex-col justify-between '>
                     <div className='lg:w-1/2'>
-                        <h1 className='text-6xl text-soft-white font-semibold md:font-bold md:text-[80px]'>{carousel[currentIndex].title}</h1>
+                        <h1 className='text-6xl text-soft-white font-semibold md:font-bold md:text-[60px]'>{carousel[currentIndex].title}</h1>
                         <p className='text-soft-white'>{carousel[currentIndex].text}</p>
                     </div>
                     <Button text="See Our Portfolio" />
@@ -84,7 +84,7 @@ const Hero = () => {
             <picture className=''>
                 <source media="(min-width:1024px)" srcSet={carousel[currentIndex].heroLarge} />
                 <source media="(min-width:640px)" srcSet={carousel[currentIndex].heroMedium} />
-                <img src={carousel[currentIndex].heroSmall} alt="Paramour Art Museum" className='w-full max-w-[1110px] max-h-[720px] brightness-50'/>
+                <img src={carousel[currentIndex].heroSmall} alt="Paramour Art Museum" className='w-full brightness-50'/>
             </picture>
             <div className='hidden lg:flex absolute bottom-[-1px] left-[-80px] bg-soft-white'>
                 <div className='h-20 w-20 text-center text-xl leading-[80px]'>01</div>
