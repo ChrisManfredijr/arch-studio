@@ -16,25 +16,28 @@ import prototypeSmall from '../../assets/portfolio/mobile/image-prototype.jpg';
 import prototypeMedium from '../../assets/portfolio/tablet/image-prototype.jpg';
 import prototypeLarge from '../../assets/portfolio/desktop/image-prototype.jpg';
 
+import welcomeLarge from '../../assets/home/desktop/image-welcome.jpg';
+
 import { ReactComponent as Arrow } from '../../assets/icons/icon-arrow.svg';
 import Button from '../../components/Button';
 const Home = () => {
   return (
     <div>
       <Hero />
-      <div className='w-3/4 h-full mx-auto my-24 2xl:w-1/2'>
+      <div className='w-3/4 h-full mx-auto my-24 lg:flex 2xl:w-1/2 lg:relative'>
         <div className='border-t-4 border-light-grey w-20 md:hidden'></div>
-        <h1 className='hidden md:block text-very-light-grey text-[140px] font-semibold leading-10 pt-20'>Welcome</h1>
-        <h1 className='text-5xl font-bold text-very-dark-blue pb-2 w-full pt-20 md:pt-6 md:w-1/2'>Welcome to Arch Studio</h1>
-        <p className='text-dark-grey'>
-          <br />
-          We have a unique network and skillset to help bring your projects to life. Our small team of highly skilled individuals combined with our large network put us in a strong position to deliver exceptional results.
+        <h1 className='hidden md:block text-very-light-grey text-[140px] font-semibold leading-10 pt-20 lg:absolute lg:top-[-50px] lg:left-[75px] lg:text-[140px] xl:text-[200px]'>Welcome</h1>
+        <div className='text-dark-grey lg:w-1/2 lg:ml-auto lg:mr-24 lg:mt-24'>
+          <h1 className='text-5xl font-bold text-very-dark-blue pb-2 w-full pt-20 md:pt-6'>Welcome to Arch Studio</h1>
+            <br />
+            We have a unique network and skillset to help bring your projects to life. Our small team of highly skilled individuals combined with our large network put us in a strong position to deliver exceptional results.
+            <br /><br />
+            Over the past 10 years, we have worked on all kinds of projects. From stations to high-rise buildings, we create spaces that inspire and delight.
+            <br /><br />
+            We work closely with our clients so that we understand the intricacies of each project. This allows us to work in harmony the surrounding area to create truly stunning projects that will stand the test of time.
           <br /><br />
-          Over the past 10 years, we have worked on all kinds of projects. From stations to high-rise buildings, we create spaces that inspire and delight.
-          <br /><br />
-          We work closely with our clients so that we understand the intricacies of each project. This allows us to work in harmony the surrounding area to create truly stunning projects that will stand the test of time.
-          <br /><br />
-        </p>
+        </div>
+        <img src={welcomeLarge} alt="arch studio project" className='hidden lg:block' />
       </div>
 
       <div className='w-full relative md:w-3/4 mx-auto 2xl:w-1/2'>
