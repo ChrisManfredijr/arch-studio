@@ -23,6 +23,7 @@ import Button from '../../components/Button';
 const Home = () => {
   return (
     <div>
+      <div className='hidden md:flex absolute rotate-90 tracking-[0.15em] top-20 left-[-75px] text-light-grey justify-between w-[250px] lg:left-[-55px] xl:left-[-20px] 2xl:left-[300px]'><span className='tracking-[-2.5px]'>----------------------------------</span>  H O M E</div>
       <Hero />
       <div className='w-3/4 h-full mx-auto my-24 lg:flex 2xl:w-1/2 lg:relative'>
         <div className='border-t-4 border-light-grey w-20 md:hidden'></div>
