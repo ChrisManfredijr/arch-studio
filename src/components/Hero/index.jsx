@@ -59,10 +59,11 @@ const Hero = () => {
         }
         return setCurrentIndex(index => index + 1);
     }
+
     useEffect(()=> {
-        const interval = setInterval(()=>{carouselScroll()}, 7000)
+        const interval = setInterval(()=>{carouselScroll()}, 7000);
         return () => clearInterval(interval)
-    })
+    },)
 
     return (
         <div className='w-full relative md:w-3/4 md:mx-auto 2xl:w-1/2'>
@@ -81,11 +82,11 @@ const Hero = () => {
                 <source media="(min-width:640px)" srcSet={carousel[currentIndex].heroMedium} />
                 <img src={carousel[currentIndex].heroSmall} alt="Paramour Art Museum" className='w-full brightness-50'/>
             </picture>
-            <div className='hidden lg:flex absolute bottom-[-1px] left-[-80px] bg-soft-white'>
-                <div className='h-20 w-20 text-center text-xl leading-[80px]'>01</div>
-                <div className='h-20 w-20 text-center text-xl leading-[80px]'>02</div>
-                <div className='h-20 w-20 text-center text-xl leading-[80px]'>03</div>
-                <div className='h-20 w-20 text-center text-xl leading-[80px]'>04</div>
+            <div className='hidden lg:flex absolute bottom-[-1px] left-[-80px] bg-soft-white z-10'>
+                <div onClick={() => setCurrentIndex(0)} className={`h-20 w-20 text-center text-xl leading-[80px] hover:bg-very-light-grey cursor-pointer ${currentIndex === 0 ? "bg-very-dark-blue text-soft-white  hover:bg-very-dark-blue cursor-default":""}`}>01</div>
+                <div onClick={() => setCurrentIndex(1)} className={`h-20 w-20 text-center text-xl leading-[80px] hover:bg-very-light-grey cursor-pointer ${currentIndex === 1 ? "bg-very-dark-blue text-soft-white  hover:bg-very-dark-blue cursor-default":""}`}>02</div>
+                <div onClick={() => setCurrentIndex(2)} className={`h-20 w-20 text-center text-xl leading-[80px] hover:bg-very-light-grey cursor-pointer ${currentIndex === 2 ? "bg-very-dark-blue text-soft-white  hover:bg-very-dark-blue cursor-default":""}`}>03</div>
+                <div onClick={() => setCurrentIndex(3)} className={`h-20 w-20 text-center text-xl leading-[80px] hover:bg-very-light-grey cursor-pointer ${currentIndex === 3 ? "bg-very-dark-blue text-soft-white  hover:bg-very-dark-blue cursor-default":""}`}>04</div>
             </div>
         </div>
     )
