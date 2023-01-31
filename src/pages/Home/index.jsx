@@ -1,25 +1,23 @@
 import Hero from '../../components/Hero';
-
-import teamSmall from '../../assets/home/mobile/image-small-team.jpg';
-import teamMedium from '../../assets/home/tablet/image-small-team.jpg';
-import teamLarge from '../../assets/home/desktop/image-small-team.jpg';
-
-import delSolSmall from '../../assets/portfolio/mobile/image-del-sol.jpg';
-import delSolMedium from '../../assets/portfolio/tablet/image-del-sol.jpg';
-import delSolLarge from '../../assets/portfolio/desktop/image-del-sol.jpg';
-
-import bTowerSmall from '../../assets/portfolio/mobile/image-228b.jpg';
-import bTowerMedium from '../../assets/portfolio/tablet/image-228b.jpg';
-import bTowerLarge from '../../assets/portfolio/desktop/image-228b.jpg';
-
-import prototypeSmall from '../../assets/portfolio/mobile/image-prototype.jpg';
-import prototypeMedium from '../../assets/portfolio/tablet/image-prototype.jpg';
-import prototypeLarge from '../../assets/portfolio/desktop/image-prototype.jpg';
-
-import welcomeLarge from '../../assets/home/desktop/image-welcome.jpg';
-
-import { ReactComponent as Arrow } from '../../assets/icons/icon-arrow.svg';
 import Button from '../../components/Button';
+import { ReactComponent as Arrow } from '../../assets/icons/icon-arrow.svg';
+
+import {
+  teamSmall,
+  teamMedium,
+  teamLarge,
+  delSolSmall,
+  delSolMedium,
+  delSolLarge,
+  bTowerSmall,
+  bTowerMedium,
+  bTowerLarge,
+  prototypeSmall,
+  prototypeMedium,
+  prototypeLarge,
+  welcomeLarge
+} from '../../assets';
+
 const Home = () => {
   return (
     <div>

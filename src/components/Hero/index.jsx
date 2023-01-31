@@ -1,26 +1,21 @@
 import {useState, useEffect} from 'react';
 
-
-//responsive images of the Paramour 
-import heroParamourSmall from '../../assets/home/mobile/image-hero-paramour.jpg';
-import heroParamourMedium from '../../assets/home/tablet/image-hero-paramour.jpg';
-import heroParamourLarge from '../../assets/home/desktop/image-hero-paramour.jpg';
-
-//responsive images of the Seraph Station
-import heroSeraphSmall from '../../assets/home/mobile/image-hero-seraph.jpg';
-import heroSeraphMedium from '../../assets/home/tablet/image-hero-seraph.jpg';
-import heroSeraphLarge from '../../assets/home/desktop/image-hero-seraph.jpg';
-
-//responsive images of Federal II tower
-import heroFederalSmall from '../../assets/home/mobile/image-hero-federal.jpg';
-import heroFederalMedium from '../../assets/home/tablet/image-hero-federal.jpg';
-import heroFederalLarge from '../../assets/home/desktop/image-hero-federal.jpg';
-
-//responsive images of Trinity Bank Tower
-import heroTrinitySmall from '../../assets/home/mobile/image-hero-trinity.jpg';
-import heroTrinityMedium from '../../assets/home/tablet/image-hero-trinity.jpg';
-import heroTrinityLarge from '../../assets/home/desktop/image-hero-trinity.jpg';
-
+import {
+    heroParamourSmall,
+    heroParamourMedium,
+    heroParamourLarge,
+    heroSeraphSmall,
+    heroSeraphMedium,
+    heroSeraphLarge,
+    heroFederalSmall,
+    heroFederalMedium,
+    heroFederalLarge,
+    heroTrinitySmall,
+    heroTrinityMedium,
+    heroTrinityLarge,
+   
+  } from '../../assets';
+  
 import Button from '../../components/Button';
 
 const Hero = () => {
