@@ -23,7 +23,7 @@ import  heroFederalLarge  from './home/desktop/image-hero-federal.jpg';
 import  heroTrinitySmall  from './home/mobile/image-hero-trinity.jpg';
 import  heroTrinityMedium  from './home/tablet/image-hero-trinity.jpg';
 import  heroTrinityLarge  from './home/desktop/image-hero-trinity.jpg';
- 
+
 export {
     teamSmall,
     teamMedium,
@@ -49,5 +49,6 @@ export {
     heroFederalLarge,
     heroTrinitySmall,
     heroTrinityMedium,
-    heroTrinityLarge
+    heroTrinityLarge,
+
 }
