@@ -1,6 +1,7 @@
 import Hero from '../../components/Hero';
 import Button from '../../components/Button';
 import { ReactComponent as Arrow } from '../../assets/icons/icon-arrow.svg';
+import {Link} from 'react-router-dom';
 
 import {
   teamSmall,
@@ -45,7 +46,9 @@ const Home = () => {
             <div>
               <h1 className='text-5xl text-soft-white font-bold pb-5 md:text-[70px]'>Small team, big ideas</h1>
             </div>
-            <Button text="About Us" />
+            <a as={Link} href="/About">
+              <Button text="About Us"/>
+            </a>
           </div>
         </div>
         <picture className=''>
@@ -58,9 +61,11 @@ const Home = () => {
       <div className='w-10/12 mx-auto mt-20 my-20 pb-20 md:w-3/4 2xl:w-1/2'>
         <div className='text-5xl font-bold pb-5 md:flex md:pb-5 justify-between'>
           Featured
-          <div className='hidden w-max p-4 md:flex font-semibold mt-7 text-xl md:mt-0  bg-very-dark-blue text-soft-white  hover:bg-dark-grey active:bg-light-grey'>
-          See All  &nbsp; &nbsp; &nbsp; <Arrow />
-          </div>
+          <a as={Link} href="/Portfolio">
+            <div className='hidden w-max p-4 cursor-pointer md:flex font-semibold mt-7 text-xl md:mt-0  bg-very-dark-blue text-soft-white  hover:bg-dark-grey active:bg-light-grey'>
+            See All  &nbsp; &nbsp; &nbsp; <Arrow />
+            </div>
+          </a>
         </div>
 
         <div className='lg:flex lg:justify-between '>
@@ -74,7 +79,7 @@ const Home = () => {
             <h1 className='hidden md:block text-soft-white text-[250px] absolute right-3 top-[-25px] font-bold text-opacity-50'>1</h1>
             <div className='absolute flex flex-col bottom-0 left-0 p-5'>
               <h1 className='text-3xl font-bold text-soft-white'>Project De Sol</h1>
-              <p className='text-soft-white'>View All Projects</p>
+              <a as={Link} href="/Portfolio" className='cursor-pointer text-soft-white'>View All Projects</a>
             </div>
           </div>
 
@@ -87,7 +92,7 @@ const Home = () => {
             <h1 className='hidden md:block text-soft-white text-[250px] absolute right-3 top-[-25px] font-bold text-opacity-50'>2</h1>
             <div className='absolute flex flex-col bottom-0 left-0 p-5'>
               <h1 className='text-3xl font-bold text-soft-white'>228B Tower</h1>
-              <p className='text-soft-white'>View All Projects</p>
+              <a as={Link} href="/Portfolio" className='cursor-pointer text-soft-white'>View All Projects</a>
             </div>
           </div>
 
@@ -100,7 +105,7 @@ const Home = () => {
             <h1 className='hidden md:block text-soft-white text-[250px] absolute right-3 top-[-25px] font-bold text-opacity-50'>3</h1>
             <div className='absolute flex flex-col bottom-0 left-0 p-5'>
               <h1 className='text-3xl font-bold text-soft-white'>Le Prototype</h1>
-              <p className='text-soft-white'>View All Projects</p>
+              <a as={Link} href="/Portfolio" className='cursor-pointer text-soft-white'>View All Projects</a>
             </div>
           </div>
         </div>

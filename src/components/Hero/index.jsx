@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 
 import {
     heroParamourSmall,
@@ -75,7 +76,10 @@ const Hero = () => {
                         <h1 className='text-6xl text-soft-white font-semibold md:font-bold md:text-[60px]'>{carousel[currentIndex].title}</h1>
                         <p className='text-soft-white'>{carousel[currentIndex].text}</p>
                     </div>
-                    <Button text="See Our Portfolio" />
+
+                    <a as={Link} href="/Portfolio">
+                        <Button text="See Our Portfolio" />
+                    </a>
                 </div>
             </div>
 
