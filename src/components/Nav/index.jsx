@@ -13,6 +13,7 @@ const Nav = () => {
         <Logo className="scale-75 md:scale-100"/>
       </a>
 
+      {/* medium screen links on nav bar*/}
       <div className='hidden text-medium-grey z-20 font-bold md:flex md:leading-9 md:text-xl'>
         <a className='md:pl-16' as={Link} href="/Portfolio">Portfolio</a>
         <a className='md:pl-16' as={Link} href="/About">About Us</a>
@@ -21,6 +22,7 @@ const Nav = () => {
 
       {openMenu ? <Close className="cursor-pointer" onClick={() =>{setOpenMenu(false)}}/> : <Hamburger className="my-auto md:hidden cursor-pointer" onClick={() =>{setOpenMenu(true)}}/>}
       
+      {/* s screen links on nav bar*/}
       {openMenu ? <div className='absolute bg-very-light-grey h-[235px] w-[343px] z-20 top-24 right-0 p-12'>
       <div className='text-very-dark-blue font-bold text-4xl flex flex-col'>
         <a className='pb-3.5' as={Link} href="/Portfolio">Portfolio</a>

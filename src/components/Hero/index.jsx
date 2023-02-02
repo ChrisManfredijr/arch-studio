@@ -21,7 +21,7 @@ import Button from '../../components/Button';
 
 const Hero = () => {
     
-    
+    //carousel array
     const carousel = [
         {   
             title: 'Project Paramour',
@@ -54,6 +54,7 @@ const Hero = () => {
     ]
     const [currentIndex, setCurrentIndex] = useState(0);
     
+    //sets the current index of carousel, if at end of array, loops to begining 
     const carouselScroll = () => {
         if(currentIndex === carousel.length - 1){
             return setCurrentIndex(0);
@@ -61,6 +62,7 @@ const Hero = () => {
         return setCurrentIndex(index => index + 1);
     }
 
+    //changes image every 7 seconds
     useEffect(()=> {
         const interval = setInterval(()=>{carouselScroll()}, 7000);
         return () => clearInterval(interval);
@@ -88,7 +90,8 @@ const Hero = () => {
                 <source media="(min-width:640px)" srcSet={carousel[currentIndex].heroMedium} />
                 <img src={carousel[currentIndex].heroSmall} alt="Paramour Art Museum" className='w-full brightness-50'/>
             </picture>
-
+            
+            {/*Large media screen carousel buttons*/}
             <div className='hidden lg:flex absolute bottom-[-1px] left-[-80px] bg-soft-white z-10'>
                 <div onClick={() => setCurrentIndex(0)} className={`h-20 w-20 text-center text-xl leading-[80px] hover:bg-very-light-grey cursor-pointer ${currentIndex === 0 ? "bg-very-dark-blue text-soft-white  hover:bg-very-dark-blue cursor-default":""}`}>01</div>
                 <div onClick={() => setCurrentIndex(1)} className={`h-20 w-20 text-center text-xl leading-[80px] hover:bg-very-light-grey cursor-pointer ${currentIndex === 1 ? "bg-very-dark-blue text-soft-white  hover:bg-very-dark-blue cursor-default":""}`}>02</div>

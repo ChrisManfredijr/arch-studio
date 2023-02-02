@@ -1,3 +1,4 @@
+//homepage
 import  teamSmall  from './home/mobile/image-small-team.jpg';
 import  teamMedium  from './home/tablet/image-small-team.jpg';
 import  teamLarge  from './home/desktop/image-small-team.jpg';
@@ -64,6 +65,16 @@ import portSeraphLarge from './portfolio/desktop/image-seraph.jpg';
 import portSxivLarge from './portfolio/desktop/image-sxiv.jpg';
 import portTrinityLarge from './portfolio/desktop/image-trinity.jpg';
 
+//about 
+import avatarJacksonLarge from './about/desktop/avatar-jackson.jpg';
+import avatarJakeLarge from './about/desktop/avatar-jake.jpg';
+import avatarMariaLarge from './about/desktop/avatar-maria.jpg';
+import avatarThompsonLarge from './about/desktop/avatar-thompson.jpg';
+import heritageLarge from './about/desktop/image-heritage.jpg';
+import aboutHeroLarge from './about/desktop/image-hero.jpg';
+import aboutHeroMedium from './about/tablet/image-hero.jpg';
+import aboutHeroSmall from './about/mobile/image-hero.jpg';
+
 export {
     teamSmall,
     teamMedium,
@@ -129,4 +140,13 @@ export {
     portSeraphLarge,
     portSxivLarge,
     portTrinityLarge,
+
+    avatarJacksonLarge, 
+    avatarJakeLarge, 
+    avatarMariaLarge,
+    avatarThompsonLarge,
+    heritageLarge,
+    aboutHeroLarge,
+    aboutHeroMedium,
+    aboutHeroSmall,
 }
