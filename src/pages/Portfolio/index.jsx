@@ -128,11 +128,19 @@ const Portfolio = () => {
   ]
   
   return (
-    <div>
+    <div className='flex flex-col py-24 relative'>
       {portfolioArray.map((project, index) => {
         return (
-          <div key={index}>
-            
+          <div key={index} className="relative w-4/5 mx-auto pb-8">
+            <picture className=''>
+              <source media="(min-width:1024px)" srcSet={project.desktop} />
+              <source media="(min-width:640px)" srcSet={project.tablet} />
+              <img src={project.mobile} alt={project.name} className='w-full brightness-75' />
+            </picture>
+            <div className='absolute bottom-8 p-6 text-soft-white'>
+              <h1 className="text-4xl font-semibold">{project.name}</h1>
+              <h2 className="text-xl">{project.date}</h2>
+            </div>
           </div>
         )
       })}
