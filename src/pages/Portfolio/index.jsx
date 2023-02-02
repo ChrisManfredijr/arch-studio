@@ -36,8 +36,10 @@ import {
     portSeraphLarge,
     portSxivLarge,
     portTrinityLarge,
-    heroParamourLarge,
+    portParamourLarge,
 } from '../../assets';
+
+
 
 const Portfolio = () => {
   const portfolioArray = [
@@ -123,27 +125,31 @@ const Portfolio = () => {
       date: 'Febuary 2009',
       mobile: portParamourSmall,
       tablet: portParamourMedium,
-      desktop: heroParamourLarge,
+      desktop: portParamourLarge,
     },
   ]
   
   return (
-    <div className='flex flex-col py-24 relative'>
-      {portfolioArray.map((project, index) => {
-        return (
-          <div key={index} className="relative w-4/5 mx-auto pb-8">
-            <picture className=''>
-              <source media="(min-width:1024px)" srcSet={project.desktop} />
-              <source media="(min-width:640px)" srcSet={project.tablet} />
-              <img src={project.mobile} alt={project.name} className='w-full brightness-75' />
-            </picture>
-            <div className='absolute bottom-8 p-6 text-soft-white'>
-              <h1 className="text-4xl font-semibold">{project.name}</h1>
-              <h2 className="text-xl">{project.date}</h2>
+    <div className=''>
+      <div className='hidden md:flex absolute rotate-90 tracking-[0.15em] top-30 left-[-125px] text-light-grey justify-between w-[350px] lg:left-[-100px] xl:left-[-50px] 2xl:left-[200px]'><span className='tracking-[-2.5px]'>----------------------------------</span>P O R T F O L I O</div>
+      <div className='flex flex-col py-24 relative md:py-8 lg:flex-row lg:flex-wrap lg:w-3/4 lg:mx-auto 2xl:w-1/2'>
+        {portfolioArray.map((project, index) => {
+          return (
+            <div key={index} className='relative w-4/5 mx-auto pb-8 lg:w-1/3 lg:p-4'>
+              <picture className="">
+                <source media="(min-width:1024px)" srcSet={project.desktop} />
+                <source media="(min-width:640px)" srcSet={project.tablet} />
+                <img src={project.mobile} alt={project.name} className='w-full brightness-75' />
+              </picture>
+              <div className='absolute bottom-8 p-6 text-soft-white'>
+                <h1 className="text-4xl font-bold">{project.name}</h1>
+                <h2 className="text-xl">{project.date}</h2>
+              </div>
             </div>
-          </div>
         )
       })}
+
+      </div>
     </div>
   )
 }
