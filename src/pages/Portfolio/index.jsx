@@ -135,7 +135,7 @@ const Portfolio = () => {
       <div className='flex flex-col py-24 relative md:py-8 lg:flex-row lg:flex-wrap lg:w-3/4 lg:mx-auto 2xl:w-1/2'>
         {portfolioArray.map((project, index) => {
           return (
-            <div key={index} className='relative w-4/5 mx-auto pb-8 lg:w-1/3 lg:p-4'>
+            <div key={index} className='relative w-4/5 mx-auto pb-8 lg:w-1/3 lg:p-3'>
               <picture className="">
                 <source media="(min-width:1024px)" srcSet={project.desktop} />
                 <source media="(min-width:640px)" srcSet={project.tablet} />
