@@ -24,6 +24,46 @@ import  heroTrinitySmall  from './home/mobile/image-hero-trinity.jpg';
 import  heroTrinityMedium  from './home/tablet/image-hero-trinity.jpg';
 import  heroTrinityLarge  from './home/desktop/image-hero-trinity.jpg';
 
+//portfolio 
+import port228bSmall from './portfolio/mobile/image-228b.jpg';
+import portDelSolSmall from './portfolio/mobile/image-del-sol.jpg';
+import portEdelweissSmall from './portfolio/mobile/image-edelweiss.jpg';
+import portEeboxSmall from './portfolio/mobile/image-eebox.jpg';
+import portFederalSmall from './portfolio/mobile/image-federal.jpg';
+import portHypersSmall from './portfolio/mobile/image-hypers.jpg';
+import portNetcrySmall from './portfolio/mobile/image-netcry.jpg';
+import portParamourSmall from './portfolio/mobile/image-paramour.jpg';
+import portPrototypeSmall from './portfolio/mobile/image-prototype.jpg';
+import portSeraphSmall from './portfolio/mobile/image-seraph.jpg';
+import portSxivSmall from './portfolio/mobile/image-sxiv.jpg';
+import portTrinitySmall from './portfolio/mobile/image-trinity.jpg';
+
+import port228bMedium from './portfolio/tablet/image-228b.jpg';
+import portDelSolMedium from './portfolio/tablet/image-del-sol.jpg';
+import portEdelweissMedium from './portfolio/tablet/image-edelweiss.jpg';
+import portEeboxMedium from './portfolio/tablet/image-eebox.jpg';
+import portFederalMedium from './portfolio/tablet/image-federal.jpg';
+import portHypersMedium from './portfolio/tablet/image-hypers.jpg';
+import portNetcryMedium from './portfolio/tablet/image-netcry.jpg';
+import portParamourMedium from './portfolio/tablet/image-paramour.jpg';
+import portPrototypeMedium from './portfolio/tablet/image-prototype.jpg';
+import portSeraphMedium from './portfolio/tablet/image-seraph.jpg';
+import portSxivMedium from './portfolio/tablet/image-sxiv.jpg';
+import portTrinityMedium from './portfolio/tablet/image-trinity.jpg';
+
+import port228bLarge from './portfolio/desktop/image-228b.jpg';
+import portDelSolLarge from './portfolio/desktop/image-del-sol.jpg';
+import portEdelweissLarge from './portfolio/desktop/image-edelweiss.jpg';
+import portEeboxLarge from './portfolio/desktop/image-eebox.jpg';
+import portFederalLarge from './portfolio/desktop/image-federal.jpg';
+import portHypersLarge from './portfolio/desktop/image-hypers.jpg';
+import portNetcryLarge from './portfolio/desktop/image-netcry.jpg';
+import portParamourLarge from './portfolio/desktop/image-paramour.jpg';
+import portPrototypeLarge from './portfolio/desktop/image-prototype.jpg';
+import portSeraphLarge from './portfolio/desktop/image-seraph.jpg';
+import portSxivLarge from './portfolio/desktop/image-sxiv.jpg';
+import portTrinityLarge from './portfolio/desktop/image-trinity.jpg';
+
 export {
     teamSmall,
     teamMedium,
@@ -51,4 +91,42 @@ export {
     heroTrinityMedium,
     heroTrinityLarge,
 
+    port228bSmall,
+    portDelSolSmall,
+    portEdelweissSmall,
+    portEeboxSmall,
+    portFederalSmall,
+    portHypersSmall,
+    portNetcrySmall,
+    portParamourSmall,
+    portPrototypeSmall,
+    portSeraphSmall,
+    portSxivSmall,
+    portTrinitySmall,
+   
+    port228bMedium,
+    portDelSolMedium,
+    portEdelweissMedium,
+    portEeboxMedium,
+    portFederalMedium,
+    portHypersMedium,
+    portNetcryMedium,
+    portParamourMedium,
+    portPrototypeMedium,
+    portSeraphMedium,
+    portSxivMedium,
+    portTrinityMedium,
+   
+    port228bLarge,
+    portDelSolLarge,
+    portEdelweissLarge,
+    portEeboxLarge,
+    portFederalLarge,
+    portHypersLarge,
+    portNetcryLarge,
+    portParamourLarge,
+    portPrototypeLarge,
+    portSeraphLarge,
+    portSxivLarge,
+    portTrinityLarge,
 }
