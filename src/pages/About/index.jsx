@@ -12,14 +12,16 @@ import {
 const About = () => {
   return (
     <div className='min-h-max'> 
-        <picture>
-          <source media="(min-width:1024px)" srcSet={aboutHeroLarge} />
-          <source media="(min-width:640px)" srcSet={aboutHeroMedium} />
-          <img src={aboutHeroSmall} alt="about us" className='w-full brightness-50' />
-        </picture>
+        <div className='md:w-10/12 mx-auto'>
+          <picture className=''>
+            <source media="(min-width:1024px)" srcSet={aboutHeroLarge} />
+            <source media="(min-width:768px)" srcSet={aboutHeroMedium} />
+            <img src={aboutHeroSmall} alt="about us" className='w-full brightness-50' />
+          </picture>
+        </div>
 
-        <div className='relative h-[350px]'>
-          <div className='absolute top-[-50px] bg-soft-white w-11/12 p-8 pt-14'>
+        <div className='relative h-[350px] '>
+          <div className='absolute top-[-50px] bg-soft-white w-11/12 p-8 pt-14 md:top-[-500px] md:w-3/4 md:right-0'>
             <h1 className='text-5xl font-bold pb-6 text-very-dark-blue'>Your team of professionals</h1>
             <p className='text-lg'>Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings.</p>
           </div>
