@@ -20,10 +20,11 @@ const About = () => {
           </picture>
         </div>
 
-        <div className='relative h-[350px] '>
-          <div className='absolute top-[-50px] bg-soft-white w-11/12 p-8 pt-14 md:top-[-500px] md:w-3/4 md:right-0'>
-            <h1 className='text-5xl font-bold pb-6 text-very-dark-blue'>Your team of professionals</h1>
-            <p className='text-lg'>Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings.</p>
+        <div className='relative h-[350px]'>
+          <div className='absolute top-[-50px] bg-soft-white w-11/12 p-8 pt-14 md:top-[-500px] md:w-3/4 md:right-0 md:h-[500px] md:pt-[150px]'>
+            <h1 className='hidden md:block text-[125px] font-semibold text-very-light-grey absolute top-[-85px] right-16'>About</h1>
+            <h1 className='text-6xl font-bold pb-6 text-very-dark-blue'>Your team of professionals</h1>
+            <p className='text-lg md:w-11/12'>Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings.</p>
           </div>
         </div>
       
