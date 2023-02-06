@@ -16,7 +16,7 @@ module.exports = {
         "red-error": '#DF5656'
       },
       screens:{
-        "xl": "1490px",
+        "xl": "1440px",
         "2xl":"2010px",
       }
     },
