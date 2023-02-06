@@ -41,7 +41,7 @@ const About = () => {
           <br/><br/>
           Our small team of world-class professionals provides input on every project.</p>
         </div>
-        <img src={heritageLarge} alt="about us" className='w-full brightness-50 lg:w-1/2' />
+        <img src={heritageLarge} alt="about us" className='hidden lg:block w-full brightness-50 lg:w-1/2' />
       </div>
 
       <div className=' w-10/12 mx-auto pb-24 md:w-3/4 xl:flex xl:justify-between 2xl:w-1/2'>
