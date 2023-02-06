@@ -23,10 +23,10 @@ const About = () => {
 
         <div className='relative h-[150px]'>
           <div className='absolute top-[-50px] bg-soft-white w-11/12 p-8 pt-14 md:top-[-500px] md:w-3/4 md:right-0 md:h-[500px] md:pt-[175px] md:p-12 lg:w-1/2 lg:right-24 lg:px-24 lg:h-[350px] lg:mt-[200px] lg:pt-20 xl:h-[500px] xl:mt-[100px]'>
-            <h1 className='hidden md:block text-[125px] font-semibold text-very-light-grey absolute top-[-85px] right-24 lg:left-0 lg:text-[150px] lg:top-[-100px] xl:text-[200px] xl:top-[-150px]'>About</h1>
+            <h1 className='hidden md:block text-[125px] font-semibold text-very-light-grey absolute top-[-85px] right-24 lg:left-0 lg:text-[150px] lg:top-[-100px] xl:text-[200px] xl:top-[-150px] 2x'>About</h1>
             <div className='hidden md:block border-t-2 border-light-grey w-20 absolute top-[75px] lg:hidden'></div>
-            <h1 className='text-6xl font-bold pb-6 text-very-dark-blue lg:text-4xl xl:text-6xl'>Your team of professionals</h1>
-            <p className='text-lg md:w-11/12 lg:text-sm xl:text-lg'>Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings.</p>
+            <h1 className='text-6xl font-bold pb-6 text-very-dark-blue lg:text-4xl xl:text-6xl 2xl:w-1/2'>Your team of professionals</h1>
+            <p className='text-lg md:w-11/12 lg:text-sm xl:text-lg xl:w-1/2'>Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings.</p>
           </div>
         </div>
       
@@ -44,7 +44,7 @@ const About = () => {
         <img src={heritageLarge} alt="about us" className='w-full brightness-50 lg:w-1/2' />
       </div>
 
-      <div className=' w-10/12 mx-auto pb-24 md:w-3/4 xl:flex xl:justify-between'>
+      <div className=' w-10/12 mx-auto pb-24 md:w-3/4 xl:flex xl:justify-between 2xl:w-1/2'>
         <h1 className='text-6xl font-bold pb-14 xl:w-1/4'>The Leaders</h1>
         <div className='md:flex md:flex-wrap xl:w-1/2'>
           <div className='pb-16 md:w-1/2 md:pl-3'>
