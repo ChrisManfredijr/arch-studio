@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className="bg-very-light-grey relative flex flex-col text-center mx-auto md:flex-row md:w-3/4">
+    <div className="bg-very-light-grey relative flex flex-col text-center lg:mx-auto md:flex-row md:w-3/4">
         <a as={Link} href="/">
           <div className="h-[120px] w-[120px] bg-very-dark-blue absolute top-[-60px] left-0 right-0 ml-auto mr-auto flex justify-center align-middle md:static md:m-0">
             <Logo className="text-soft-white my-auto scale-75"/>
