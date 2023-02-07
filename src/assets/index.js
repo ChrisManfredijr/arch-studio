@@ -75,6 +75,13 @@ import aboutHeroLarge from './about/desktop/image-hero.jpg';
 import aboutHeroMedium from './about/tablet/image-hero.jpg';
 import aboutHeroSmall from './about/mobile/image-hero.jpg';
 
+//contact
+import contactHeroSmall from './contact/mobile/image-hero.jpg';
+import contactHeroMedium from './contact/tablet/image-hero.jpg';
+import contactHeroLarge from './contact/desktop/image-hero.jpg';
+import contactMapSmall from './contact/mobile/image-map.png';
+import contactMapMedium from './contact/tablet/image-map.png';
+import contactMapLarge from './contact/desktop/image-map.png';
 export {
     teamSmall,
     teamMedium,
@@ -149,4 +156,10 @@ export {
     aboutHeroLarge,
     aboutHeroMedium,
     aboutHeroSmall,
+    contactHeroSmall,
+    contactHeroMedium,
+    contactHeroLarge ,
+    contactMapSmall,
+    contactMapMedium ,
+    contactMapLarge 
 }
