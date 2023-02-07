@@ -1,3 +1,4 @@
+import React from 'react';
 import {
     contactHeroSmall,
     contactHeroMedium,
@@ -6,7 +7,12 @@ import {
     contactMapMedium ,
     contactMapLarge 
 } from '../../assets'
+
+import {ReactComponent as Arrow} from '../../assets/icons/icon-arrow.svg';
+
 const Contact = () => {
+  
+
   return (
     <div className='min-h-max'>
       <div className='hidden md:flex absolute rotate-90 tracking-[0.15em] top-[130px] left-[-95px] text-light-grey justify-between w-[300px] lg:left-[-100px] xl:left-[-50px] 2xl:left-[200px]'><span className='tracking-[-2.5px]'>--------------------------------</span>C O N T A C T &nbsp; &nbsp; U S</div>
@@ -61,12 +67,16 @@ const Contact = () => {
             <img src={contactMapSmall} alt="about us" className='w-full mx-auto'/>
           </picture>
         </div>
-
-        <div className='w-11/12 mx-auto py-14'>
+        {/*Contact Form*/}
+        
+        <div className='w-11/12 mx-auto py-14 pb-24'>
           <h1 className='font-bold text-5xl w-1/2'>Connect With Us</h1>
-          <div className='text-light-grey leading-10'>Name</div>
-          <div>Email</div>
-          <div>Message</div>
+          <input className='text-light-grey border-b-2 border-medium-grey p-4 text-xl font-semibold w-full' type="text"  name="user_name" placeholder='Name' required/>
+          <input className='text-light-grey border-b-2 border-medium-grey p-4 text-xl font-semibold w-full' type="text"  name="user_email" placeholder='Email' required/>
+          <textarea className='text-light-grey border-b-2 border-medium-grey p-4 text-xl font-semibold w-full' type="text" name="message" placeholder='Message' rows="3"></textarea>
+            <div className='h-auto w-max p-5 flex font-semibold bg-very-dark-blue text-soft-white  hover:bg-dark-grey active:bg-light-grey cursor-pointer ml-auto' type="submit" value="Send">
+              <Arrow />
+            </div>
         </div>
     </div>
   )
