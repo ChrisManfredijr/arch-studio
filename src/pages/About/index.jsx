@@ -15,11 +15,14 @@ const About = () => {
   const [visible, setVisible] = useState(false);
   useEffect(() => {
     setVisible(true);
+    return () => {
+      setVisible(false);
+    };
   }, []);
 
   return (
-    
-    <div className={`transition-opacity duration-500 ${visible ? 'opacity-100 min-h-max' : 'opacity-0 min-h-max'}`}>
+   
+    <div className={`transition-opacity duration-500 ${visible ? 'opacity-100 min-h-screen' : 'opacity-0 min-h-screen'}`}>
       
     <div className='hidden md:flex absolute rotate-90 tracking-[0.15em] top-[130px] left-[-95px] text-light-grey justify-between w-[300px] lg:left-[-100px] xl:left-[-50px] 2xl:left-[200px]'><span className='tracking-[-2.5px]'>--------------------------------</span>A B O U T &nbsp; &nbsp; U S</div>
         <div className='md:w-3/4 mx-auto 2xl:w-1/2'>
@@ -30,7 +33,7 @@ const About = () => {
           </picture>
         </div>
 
-        <div className='relative h-[150px]'>
+        <div className={`transition-opacity duration-400 ${visible ? 'opacity-100 relative h-[150px]' : 'opacity-0 relative h-[150px]'}`}>
           <div className='absolute top-[-50px] bg-soft-white w-11/12 p-8 pt-14 md:top-[-500px] md:w-3/4 md:right-0 md:h-[500px] md:pt-[175px] md:p-12 lg:w-1/2 lg:right-24 lg:px-24 lg:h-[350px] lg:mt-[200px] lg:pt-20 xl:h-[500px] xl:mt-[100px]'>
             <h1 className='hidden md:block text-[125px] font-semibold text-very-light-grey absolute top-[-85px] right-24 lg:left-0 lg:text-[150px] lg:top-[-100px] xl:text-[200px] xl:top-[-150px] 2x'>About</h1>
             <div className='hidden md:block border-t-2 border-light-grey w-20 absolute top-[75px] lg:hidden'></div>
