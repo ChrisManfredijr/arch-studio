@@ -19,7 +19,7 @@ const About = () => {
       setVisible(false);
     };
   }, []);
-
+  console.log("test about");
   return (
    
     <div className={`transition-opacity duration-500 ${visible ? 'opacity-100 min-h-screen' : 'opacity-0 min-h-screen'}`}>
