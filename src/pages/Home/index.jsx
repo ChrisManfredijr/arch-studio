@@ -1,3 +1,4 @@
+import {useState,useEffect} from 'react';
 import Hero from '../../components/Hero';
 import Button from '../../components/Button';
 import Bookmark from '../../components/Bookmark';
@@ -22,8 +23,13 @@ import {
 } from '../../assets';
 
 const Home = () => {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    setVisible(true);
+  }, []);
+
   return (
-    <div>
+    <div className={`transition-opacity duration-500 ${visible ? 'opacity-100 min-h-max' : 'opacity-0 min-h-max'}`}>
       <Bookmark text="H O M E"/>
       <Hero />
       <div className='w-3/4 h-full mx-auto my-24 lg:flex 2xl:w-1/2 lg:relative'>

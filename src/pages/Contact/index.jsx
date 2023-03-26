@@ -1,4 +1,5 @@
 import React from 'react';
+import {useState,useEffect} from 'react';
 import {
   contactHeroSmall,
   contactHeroMedium,
@@ -11,10 +12,13 @@ import {
 import { ReactComponent as Arrow } from '../../assets/icons/icon-arrow.svg';
 
 const Contact = () => {
-
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    setVisible(true);
+  }, []);
 
   return (
-    <div className='min-h-max'>
+    <div className={`transition-opacity duration-500 ${visible ? 'opacity-100 min-h-max' : 'opacity-0 min-h-max'}`}>
       <div className='hidden md:flex absolute rotate-90 tracking-[0.15em] top-[120px] left-[-95px] text-light-grey justify-between w-[275px] lg:left-[-100px] xl:left-[-50px] 2xl:left-[200px]'><span className='tracking-[-2.5px]'>--------------------------------</span>C O N T A C T</div>
 
       <div className='md:w-3/4 mx-auto 2xl:w-1/2'>

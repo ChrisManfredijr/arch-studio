@@ -1,3 +1,5 @@
+import {useState,useEffect} from 'react';
+
 import {
     port228bSmall, 
     portDelSolSmall,
@@ -42,6 +44,11 @@ import {
 
 
 const Portfolio = () => {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    setVisible(true);
+  }, []);
+
   const portfolioArray = [
     {
       name:'Seraph Station',
@@ -130,7 +137,7 @@ const Portfolio = () => {
   ]
   
   return (
-    <div className=''>
+    <div className={`transition-opacity duration-500 ${visible ? 'opacity-100 min-h-max' : 'opacity-0 min-h-max'}`}>
       <div className='hidden md:flex absolute rotate-90 tracking-[0.15em] top-30 left-[-125px] text-light-grey justify-between w-[350px] lg:left-[-100px] xl:left-[-50px] 2xl:left-[200px]'><span className='tracking-[-2.5px]'>----------------------------------</span>P O R T F O L I O</div>
       <div className='flex flex-col py-24 relative md:py-8 lg:flex-row lg:flex-wrap lg:w-3/4 lg:mx-auto 2xl:w-1/2'>
         {portfolioArray.map((project, index) => {
