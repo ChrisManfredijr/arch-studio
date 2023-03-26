@@ -44,11 +44,15 @@ import {
 import Bookmark from '../../components/Bookmark';
 
 const Portfolio = () => {
+  
   const [visible, setVisible] = useState(false);
   useEffect(() => {
+    const timer = setTimeout(() => {
     setVisible(true);
+
+    }, 200)
     return () => {
-      setVisible(false);
+      setVisible(false), clearTimeout(timer);
     };
   }, []);
 

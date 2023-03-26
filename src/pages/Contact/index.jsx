@@ -14,9 +14,12 @@ import { ReactComponent as Arrow } from '../../assets/icons/icon-arrow.svg';
 const Contact = () => {
   const [visible, setVisible] = useState(false);
   useEffect(() => {
+    const timer = setTimeout(() => {
     setVisible(true);
+
+    }, 200)
     return () => {
-      setVisible(false);
+      setVisible(false), clearTimeout(timer);
     };
   }, []);
 
