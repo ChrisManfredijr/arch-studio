@@ -10,7 +10,7 @@ import {
     aboutHeroMedium,
     aboutHeroSmall,
 } from '../../assets';
-
+import Bookmark from '../../components/Bookmark';
 const About = () => {
   const [visible, setVisible] = useState(false);
   useEffect(() => {
@@ -19,12 +19,12 @@ const About = () => {
       setVisible(false);
     };
   }, []);
-  console.log("test about");
+  
   return (
    
     <div className={`transition-opacity duration-500 ${visible ? 'opacity-100 min-h-screen' : 'opacity-0 min-h-screen'}`}>
       
-    <div className='hidden md:flex absolute rotate-90 tracking-[0.15em] top-[130px] left-[-95px] text-light-grey justify-between w-[300px] lg:left-[-100px] xl:left-[-50px] 2xl:left-[200px]'><span className='tracking-[-2.5px]'>--------------------------------</span>A B O U T &nbsp; &nbsp; U S</div>
+      <Bookmark text="A B O U T"/>
         <div className='md:w-3/4 mx-auto 2xl:w-1/2'>
           <picture className=''>
             <source media="(min-width:1024px)" srcSet={aboutHeroLarge} />
