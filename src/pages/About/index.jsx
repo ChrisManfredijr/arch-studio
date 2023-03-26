@@ -22,7 +22,7 @@ const About = () => {
   
   return (
    
-    <div className={`transition-opacity duration-500 ${visible ? 'opacity-100 min-h-screen' : 'opacity-0 min-h-screen'}`}>
+    <div className={`transition-opacity duration-1000 ${visible ? 'opacity-100 min-h-screen' : 'opacity-0 min-h-screen'}`}>
       
       <Bookmark text="A B O U T"/>
         <div className='md:w-3/4 mx-auto 2xl:w-1/2'>

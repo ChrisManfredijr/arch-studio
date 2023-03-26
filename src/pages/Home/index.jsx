@@ -30,9 +30,9 @@ const Home = () => {
       setVisible(false);
     };
   }, []);
-
+  
   return (
-    <div className={`transition-opacity duration-500 ${visible ? 'opacity-100 min-h-screen' : 'opacity-0 min-h-screen'}`}>
+    <div className={`transition-opacity duration-1000 ${visible ? 'opacity-100 min-h-screen' : 'opacity-0 min-h-screen'}`}>
       <Bookmark text="H O M E"/>
       <Hero />
       <div className='w-3/4 h-full mx-auto my-24 lg:flex 2xl:w-1/2 lg:relative'>
